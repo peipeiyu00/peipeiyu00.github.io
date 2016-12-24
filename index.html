@@ -3,14 +3,7 @@
 <head>
 <script type = "text/javascript" >
 
-function image() {
-var img = document.createElement('img');
- 	img.src = "http://....";
-	document.body.appendChild(img);
-var name = document.getElementById("textbox1").value;
-var objTo = document.getElementById('myDiv')
-
-}
+	//generate random number for a card
 function myfunction(){
 var  randomNum = Math.floor((Math.random()*52)+1);
 return randomNum;
@@ -19,9 +12,10 @@ function sayHello() {
  document.getElementById('hello').innerHTML = "say hello";
 }
 
-// heart 1, diamond 2, club 3, spade 4
+// each card will be assigned suit and number
 var suit = 0;
 var number = 0;
+	//function to get images
 function create(card) {
 var img = document.createElement('img');
 img.height = "100";
@@ -236,7 +230,7 @@ img.src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Poker-sm-212-Ks.png
 }
 return img;
 }
-
+//function to assign suit to card
 function assignSuit(card) {
 if (card==1 || card==5 || card==9 || card==13 || card==17 || card==21 || card==25 || card==29 || card==33 || card==37 || card==41 || card==45 || card==49) {
 suit = 1;
@@ -249,7 +243,7 @@ suit = 4;
 } 
 return suit;
 }
-
+//function to assign number to card
 function numberAssign(card) {
 if(card==1 || card ==2 || card == 3 || card == 4) {
 number = 14;
@@ -289,7 +283,7 @@ var comHeartCounter = 0;
 var comSpadeCounter = 0;
 var comDiamondCounter = 0;
 var comClubCounter = 0;
-
+//functions to count number of card of each suit
 function mySuitCounter(suit) {
 if (suit == 1) {
 myHeartCounter ++;
@@ -327,7 +321,7 @@ comClubCounter = 0;
 comSpadeCounter = 0;
 }
 
-
+//function create blank card
 function blank() {
 var img = document.createElement('img');
 img.src="https://s-media-cache-ak0.pinimg.com/originals/6c/a0/16/6ca016115a894f69dea75cc80f95ad92.jpg";
@@ -336,7 +330,7 @@ img.width = "100";
 
 myDiv.appendChild(img);
 }
-
+//more variables
 var one = 0;
 var two = 0;
 var comPuterOne = 0;
@@ -365,7 +359,7 @@ var turnNumber = 0;
 var riverNumber = 0;
 var riverSuit = 0;
 
-
+//functions to show cards, assign numbers, and assign suit
 function returnFirst() {
 one = myfunction();
 card = create(one);
@@ -473,7 +467,7 @@ mySuitCounter(riverSuit);
 card = create(river);
 flopTurnRiver.appendChild(card);
 }
-
+//function called onclick to display cards
 var counter = 0;
 function whichNext() {
 counter ++;
@@ -490,6 +484,7 @@ River();
 
 
 var pot = 0;
+	//function calculates pot
 function potCalc(){
 var out=document.getElementById("thePot");
 out.innerHTML=pot;
@@ -499,7 +494,7 @@ pot = 0;
 var out=document.getElementById("thePot");
 out.innerHTML=pot;
 }
-
+//function clears cards
 function Clear() {
 counter = 0;
 while (myDiv.firstChild) {
@@ -514,7 +509,7 @@ while(flopTurnRiver.firstChild) {
 }
 }
 
-//SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+//function shows computers cards at end
 function showComCards() {
 while (myDiv.firstChild) {
     myDiv.removeChild(myDiv.firstChild);
@@ -527,14 +522,14 @@ myDiv.appendChild(e);
 
 
 
-
+//more variables
 var b = 0;
 var yourAmount = 5000;
 var comAmount = 5000;
 var yourBet = 0;
 var comBet = 0;
 
-
+//function calculates pot
 function addToPot() {
  if(document.getElementById("check").checked) {
 yourBet = 0;
@@ -553,6 +548,7 @@ out.innerHTML=pot;
 
 
 var message = "";
+	//function for computers decision
 function comDecision() {
 var d = Math.floor((Math.random()*4)+1);
 if (message === "Computer raises.Check to call" && document.getElementById("check").checked){
@@ -593,7 +589,7 @@ var talk=document.getElementById("computerDecision");
 talk.innerHTML = message;
 
 }
-
+//function to calculate your winnings
 function yourWinnings() {
 yourAmount = yourAmount - yourBet;
 if (yourAmount < 0) {
@@ -607,6 +603,7 @@ var out=document.getElementById("yourAmount");
 out.innerHTML=yourAmount;
 }
 }
+	//function to calculate computers winnings
 function comWinnings() {
 comAmount = comAmount - comBet;
 if (comAmount < 0) {
@@ -630,35 +627,7 @@ function resetCounter() {
 counterB = 0;
 }
 
-//NOT FOR CODE
-/*var myFirstSuit 
-var mySecondSuit 
-var myFirstNumber 
-var mySecondNumber
-var comFirstNum 
-var comSecondNum
-var comFirstSuit 
-var comSecondSuit 
-var flopOneSuit 
-var flopOneNumber 
-var flopTwoSuit 
-var flopTwoNumber 
-var flopThreeSuit
-var flopThreeNumber 
-var turnSuit 
-var turnNumber 
-var riverNumber 
-var riverSuit 
-var myHeartCounter 
-var mySpadeCounter
-var myDiamondCounter 
-var myClubCounter 
-var comHeartCounter 
-var comSpadeCounter 
-var comDiamondCounter 
-var comClubCounter 
-*/
-
+//function to determine who wins
 function whoWins() {
 if (message === "Computer folds") {
 yourAmount = yourAmount + pot;
@@ -739,7 +708,7 @@ var d = document.getElementById("computerAmount");
 d.innerHTML=comAmount;
 }
 
-
+//functions to turn enable/disable certain buttons
 function enableDeal() {
  document.getElementById("deal").disabled = false;
 }
@@ -785,12 +754,6 @@ document.getElementById("raise").disabled = false;
 }
 
 </script>
-
-<style type="text/css">
-
-
-
-</style>
 
 
 </head>
