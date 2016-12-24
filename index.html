@@ -1,0 +1,868 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type = "text/javascript" >
+
+function image() {
+var img = document.createElement('img');
+ 	img.src = "http://....";
+	document.body.appendChild(img);
+var name = document.getElementById("textbox1").value;
+var objTo = document.getElementById('myDiv')
+
+}
+function myfunction(){
+var  randomNum = Math.floor((Math.random()*52)+1);
+return randomNum;
+}
+function sayHello() {
+ document.getElementById('hello').innerHTML = "say hello";
+}
+
+// heart 1, diamond 2, club 3, spade 4
+var suit = 0;
+var number = 0;
+function create(card) {
+var img = document.createElement('img');
+img.height = "100";
+img.width = "100";
+if (card==1 ) {
+	img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Playing_card_heart_A.svg/2000px-Playing_card_heart_A.svg.png";
+	
+} if (card==2 ) {
+img.src = "https://cdn.pixabay.com/photo/2014/04/03/10/54/playing-card-311679_640.png";
+
+}
+if (card==3) {
+img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Playing_card_club_A.svg/2000px-Playing_card_club_A.svg.png";
+
+}
+ if (card==4 ) {
+img.src = "http://cliparts.co/cliparts/5TR/rdz/5TRrdzGjc.png";
+
+}
+ if (card==5 ) {
+img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Playing_card_heart_2.svg/2000px-Playing_card_heart_2.svg.png";
+
+}
+if (card==6 ) {
+img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Playing_card_diamond_2.svg/819px-Playing_card_diamond_2.svg.png";
+
+}
+if (card==7) {
+img.src = "http://spiritualnutrition.org/wp-content/uploads/2011/07/2-of-clubs-card.jpg";
+
+}
+if (card==8) {
+img.src = "http://1.bp.blogspot.com/_wG8RymXSv5U/TPB4hd46-HI/AAAAAAAAAMU/jzBiKtbpSac/s1600/200px-Playing_card_spade_2_svg.png";
+
+}
+ if (card==9) {
+img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/03_of_hearts.svg/208px-03_of_hearts.svg.png";
+
+}
+ if (card==10) {
+img.src="http://1.bp.blogspot.com/_wG8RymXSv5U/TOdYTWpl4KI/AAAAAAAAAMQ/9pC2IcjOpG8/s1600/200px-Playing_card_diamond_3_svg.png";
+
+}
+ if (card==11) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Playing_card_club_3.svg/2000px-Playing_card_club_3.svg.png";
+
+}
+ if (card==12) {
+img.src="https://s-media-cache-ak0.pinimg.com/736x/cb/ff/b2/cbffb2276dc1187ce624f35de1c2a42b.jpg";
+
+}
+ if (card==13) {
+img.src="http://www.egreenway.com/tarot/images/gpc267.jpg";
+
+}
+ if (card==14) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Playing_card_diamond_4.svg/819px-Playing_card_diamond_4.svg.png";
+
+}
+ if (card==15) {
+img.src = "https://openclipart.org/image/800px/svg_to_png/192923/1397958273.png";
+
+}
+if (card==16) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Playing_card_spade_4.svg/2000px-Playing_card_spade_4.svg.png";
+
+}
+ if (card==17) {
+img.src="https://songofmyself.wikispaces.com/file/view/heart-5.png/151886671/heart-5.png";
+
+}
+ if (card==18) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Playing_card_diamond_5.svg/819px-Playing_card_diamond_5.svg.png";
+
+}
+ if (card==19) {
+img.src="http://1.bp.blogspot.com/_wG8RymXSv5U/TJQUX_0bGCI/AAAAAAAAALY/__ZKmTNLGeA/s1600/200px-Playing_card_club_5_svg.png";
+
+}
+ if (card==20) {
+img.src="http://3.bp.blogspot.com/_wG8RymXSv5U/TIMJxLIBbyI/AAAAAAAAAKw/LR3LT8YFA1g/s1600/200px-Playing_card_spade_5_svg.png";
+
+}
+ if (card==21) {
+img.src="http://img.geocaching.com/cache/145fa822-617c-432f-a7ae-0f8d29b9bbbc.jpg";
+
+}
+ if (card==22) {
+img.src="http://spiritualnutrition.org/wp-content/uploads/2011/07/Diamonds-6.png";
+
+}
+ if (card==23) {
+img.src="http://3.bp.blogspot.com/_wG8RymXSv5U/THCdp0sFIzI/AAAAAAAAAJo/Q6Vba9iK-mo/s1600/200px-Playing_card_club_6_svg.png";
+
+}
+ if (card==24) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Atlas_deck_6_of_spades.svg/2000px-Atlas_deck_6_of_spades.svg.png";
+
+}
+ if (card==25) {
+img.src="http://www.bjinsider.com/newsletter_117_poker_Image95.gif";
+
+}
+ if (card==26) {
+img.src="http://spiritualnutrition.org/wp-content/uploads/2011/08/7diamonds.png";
+
+}
+if (card==27) {
+img.src="http://spiritualnutrition.org/wp-content/uploads/2011/08/Seven-of-Clubs.png";
+
+}
+ if (card==28) {
+img.src="https://www.hscripts.com/freeimages/icons/playing-cards/spade-7/spade-seven-clipart1.gif";
+
+}
+ if (card==29) {
+img.src="http://spiritualnutrition.org/wp-content/uploads/2011/08/200px-Playing_card_heart_8.svg_.png";
+
+}
+ if (card==30) {
+img.src="http://spiritualnutrition.org/wp-content/uploads/2011/08/8Diamonds.png";
+
+}
+ if (card==31) {
+img.src="https://songofmyself.wikispaces.com/file/view/clubs-8.png/151886601/clubs-8.png";
+
+}
+ if (card==32) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Playing_card_spade_8.svg/2000px-Playing_card_spade_8.svg.png";
+
+}
+ if (card==33) {
+img.src="http://1.bp.blogspot.com/_wG8RymXSv5U/S_nEroTfFEI/AAAAAAAAADs/a-ZxFgQzmjA/s320/200px-Playing_card_heart_9_svg.png";
+
+}
+if (card==34) {
+img.src="https://songofmyself.wikispaces.com/file/view/diamond-9.png/151886653/diamond-9.png";
+
+}
+ if (card==35) {
+img.src="http://lasvegas.informermg.com/files/2012/05/Nine-of-Clubs.jpg";
+
+}
+ if (card==36) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Atlas_deck_9_of_spades.svg/2000px-Atlas_deck_9_of_spades.svg.png";
+
+}
+ if (card==37) {
+img.src="http://spiritualnutrition.org/wp-content/uploads/2011/07/200px-Playing_card_heart_10.jpg";
+
+}
+ if (card==38) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/10_of_diamonds_-_David_Bellot.svg/2000px-10_of_diamonds_-_David_Bellot.svg.png";
+
+}
+ if (card==39) {
+img.src="http://songofmyself.wikispaces.com/file/view/clubs-10.png/151886605/clubs-10.png";
+
+}
+ if (card==40) {
+img.src="http://3.bp.blogspot.com/_wG8RymXSv5U/S8qC6a_ZEbI/AAAAAAAAAC8/3ikY8YZznDI/s320/200px-Playing_card_spade_10_svg.png";
+
+}
+if (card==41) {
+img.src="http://lparchive.org/NIER/Update%2048/79-jack-hearts.png";
+
+}
+ if (card==42) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Poker-sm-234-Jd.png";
+
+}
+ if (card==43) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Poker-sm-244-Jc.png";
+
+}
+if (card==44) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Poker-sm-214-Js.png";
+
+}
+ if (card==45) {
+img.src="https://s-media-cache-ak0.pinimg.com/originals/15/e4/3a/15e43a712ac44407d23c437b0a5b43bc.png";
+
+}
+
+ if (card==46) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/7/70/Poker-sm-233-Qd.png";
+
+}
+ if (card==47) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Poker-sm-243-Qc.png";
+
+}
+ if (card==48) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Poker-sm-213-Qs.png/170px-Poker-sm-213-Qs.png";
+
+}
+ if (card==49) {
+img.src="https://s-media-cache-ak0.pinimg.com/564x/f1/db/2c/f1db2cddb90fd324cc32cefe1fa066d3.jpg";
+
+}
+ if (card==50) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Poker-sm-232-Kd.png";
+
+}
+ if (card==51) {
+img.src="https://allaboutcards.files.wordpress.com/2009/06/king-clubs.png";
+
+}
+ if (card==52) {
+img.src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Poker-sm-212-Ks.png";
+
+}
+return img;
+}
+
+function assignSuit(card) {
+if (card==1 || card==5 || card==9 || card==13 || card==17 || card==21 || card==25 || card==29 || card==33 || card==37 || card==41 || card==45 || card==49) {
+suit = 1;
+} else if (card ==2 || card == 6|| card == 10 || card ==14 || card ==18 || card == 22|| card ==26 || card == 30 || card == 34 || card == 38 || card == 42 || card == 46 || card == 50) {
+suit = 2;
+} else if (card == 3 || card == 7 || card == 11 || card == 15 || card == 19 || card == 23 || card == 27 || card == 31 || card == 35 || card == 39 || card == 43 || card == 47 || card == 51) {
+suit = 3;
+} else if (card == 4 ||card == 8 || card == 12 || card == 16 || card == 20 || card == 24 || card == 28 || card == 32 || card == 36 || card == 40 || card == 44 || card == 48 || card == 52 ) {
+suit = 4;
+} 
+return suit;
+}
+
+function numberAssign(card) {
+if(card==1 || card ==2 || card == 3 || card == 4) {
+number = 14;
+} else if (card==5 ||card == 6||card == 7 ||card == 8 ) {
+number = 2;
+} else if (card==9 ||card == 10||card == 11 ||card == 12 ) {
+number = 3;
+} else if (card==13 ||card == 14||card == 15 ||card == 16 ) {
+number = 4;
+} else if (card==17 ||card == 18||card == 19 ||card == 20 ) {
+number = 5;
+} else if (card==21 ||card == 22||card == 23 ||card == 24) {
+number = 6;
+} else if (card==25 ||card == 26||card == 27 ||card == 28 ) {
+number = 7;
+} else if (card==29 ||card == 30||card == 31 ||card == 32 ) {
+number = 8;
+} else if (card==33 ||card == 34||card == 35 ||card == 36 ) {
+number = 9;
+} else if (card==37 ||card == 38||card == 39 ||card == 40 ) {
+number = 10;
+}else if (card==41 ||card == 42||card == 43 ||card == 44 ) {
+number = 11;
+} else if (card==45 ||card == 46||card == 47 ||card == 48 ) {
+number = 12;
+} else if (card==49 ||card == 50||card == 51 ||card == 52 ) {
+number = 13;
+}
+return number;
+}
+//MORE VARIABLES
+var myHeartCounter = 0;
+var mySpadeCounter = 0;
+var myDiamondCounter = 0;
+var myClubCounter = 0;
+var comHeartCounter = 0;
+var comSpadeCounter = 0;
+var comDiamondCounter = 0;
+var comClubCounter = 0;
+
+function mySuitCounter(suit) {
+if (suit == 1) {
+myHeartCounter ++;
+} else if (suit == 2) {
+myDiamondCounter ++;
+} else if(suit == 3) {
+myClubCounter ++;
+} else {
+mySpadeCounter ++;
+}
+}
+
+function comSuitCounter(suit) {
+if (suit == 1) {
+comHeartCounter ++;
+} else if (suit == 2) {
+comDiamondCounter ++;
+} else if(suit == 3) {
+comClubCounter ++;
+} else {
+comSpadeCounter ++;
+}
+}
+
+function clearMySuitCounter() {
+myHeartCounter = 0;
+mySpadeCounter = 0;
+myDiamondCounter = 0;
+myClubCounter = 0;
+}
+function clearComSuitCounter() {
+comHeartCounter = 0;
+comDiamondCounter = 0;
+comClubCounter = 0;
+comSpadeCounter = 0;
+}
+
+
+function blank() {
+var img = document.createElement('img');
+img.src="https://s-media-cache-ak0.pinimg.com/originals/6c/a0/16/6ca016115a894f69dea75cc80f95ad92.jpg";
+img.height = "100";
+img.width = "100";
+
+myDiv.appendChild(img);
+}
+
+var one = 0;
+var two = 0;
+var comPuterOne = 0;
+var comPuterTwo = 0;
+var flopOne = 0;
+var flopTwo = 0;
+var flopThree = 0;
+var turn = 0;
+var river = 0;
+var myFirstSuit = 0;
+var mySecondSuit = 0;
+var myFirstNumber = 0;
+var mySecondNumber = 0;
+var comFirstNum = 0;
+var comSecondNum = 0;
+var comFirstSuit = 0;
+var comSecondSuit = 0;
+var flopOneSuit = 0;
+var flopOneNumber = 0;
+var flopTwoSuit = 0;
+var flopTwoNumber = 0;
+var flopThreeSuit = 0;
+var flopThreeNumber = 0;
+var turnSuit = 0;
+var turnNumber = 0;
+var riverNumber = 0;
+var riverSuit = 0;
+
+
+function returnFirst() {
+one = myfunction();
+card = create(one);
+myFirstSuit = assignSuit(one);
+mySuitCounter(myFirstSuit);
+myFirstNumber = numberAssign(one);
+myCards.appendChild(card);
+}
+
+function returnSecond() {
+two = myfunction();
+while(two==one) {
+two =  myfunction();
+}
+mySecondSuit = assignSuit(two);
+mySecondNumber = numberAssign(two);
+mySuitCounter(mySecondSuit );
+card = create(two);
+myCards.appendChild(card);
+}
+
+function ComPuterOne() {
+ comPuterOne  = myfunction();
+while(comPuterOne == one || comPuterOne == two) {
+comPuterOne  = myfunction();
+}
+comFirstNum = numberAssign(comPuterOne);
+comFirstSuit = assignSuit(comPuterOne);
+comSuitCounter(comFirstSuit );
+blank();
+}
+
+function ComPuterTwo() {
+comPuterTwo = myfunction();
+while(comPuterTwo == comPuterOne || comPuterTwo == one || comPuterTwo == two) {
+comPuterTwo = myfunction();
+}
+comSecondNum = numberAssign(comPuterTwo);
+comSecondSuit = assignSuit(comPuterTwo);
+comSuitCounter(comSecondSuit);
+blank();
+} 
+
+function FlopOne() {
+flopOne = myfunction();
+while(flopOne==comPuterTwo ||flopOne == comPuterOne || flopOne ==  one || flopOne ==  two) {
+flopOne = myfunction();
+}
+flopOneSuit = assignSuit(flopOne);
+flopOneNumber = numberAssign(flopOne);
+comSuitCounter(flopOneSuit);
+mySuitCounter(flopOneSuit);
+card = create(flopOne);
+flopTurnRiver.appendChild(card);
+}
+
+function FlopTwo() {
+flopTwo = myfunction();
+while(flopTwo==comPuterTwo ||flopTwo == comPuterOne || flopTwo ==  one || flopTwo ==  two|| flopTwo == flopOne) {
+flopTwo = myfunction();
+}
+flopTwoSuit = assignSuit(flopTwo);
+flopTwoNumber = numberAssign(flopTwo);
+comSuitCounter(flopTwoSuit);
+mySuitCounter(flopTwoSuit);
+card = create(flopTwo);
+flopTurnRiver.appendChild(card);
+}
+
+function FlopThree() {
+flopThree = myfunction();
+while(flopThree==comPuterTwo ||flopThree == comPuterOne || flopThree ==  one || flopThree ==  two|| flopThree == flopOne || flopThree == flopTwo) {
+flopThree = myfunction();
+}
+flopThreeSuit = assignSuit(flopThree);
+flopThreeNumber = numberAssign(flopThree);
+comSuitCounter(flopThreeSuit );
+mySuitCounter(flopThreeSuit );
+card = create(flopThree);
+flopTurnRiver.appendChild(card);
+}
+
+function Turn() {
+turn = myfunction();
+while(turn==comPuterTwo ||turn == comPuterOne || turn ==  one || turn ==  two|| turn == flopOne || turn == flopTwo || turn == flopThree) {
+turn = myfunction();
+}
+turnSuit = assignSuit(turn);
+turnNumber = numberAssign(turn);
+comSuitCounter(turnSuit );
+mySuitCounter(turnSuit );
+card = create(turn);
+flopTurnRiver.appendChild(card);
+}
+
+function River() {
+river = myfunction();
+while(river==comPuterTwo ||river == comPuterOne ||river ==  one ||river ==  two||river == flopOne ||river == flopTwo ||river == flopThree||river == turn) {
+river = myfunction();
+}
+riverNumber = numberAssign(river);
+riverSuit = assignSuit(river);
+comSuitCounter(riverSuit);
+mySuitCounter(riverSuit);
+card = create(river);
+flopTurnRiver.appendChild(card);
+}
+
+var counter = 0;
+function whichNext() {
+counter ++;
+if (counter == 1) {
+FlopOne();
+FlopTwo();
+FlopThree();
+} else if (counter == 2) {
+Turn();
+} else {
+River();
+}
+}
+
+
+var pot = 0;
+function potCalc(){
+var out=document.getElementById("thePot");
+out.innerHTML=pot;
+}
+function clearPot() {
+pot = 0;
+var out=document.getElementById("thePot");
+out.innerHTML=pot;
+}
+
+function Clear() {
+counter = 0;
+while (myDiv.firstChild) {
+    myDiv.removeChild(myDiv.firstChild);
+
+}
+while (myCards.firstChild) {
+    myCards.removeChild(myCards.firstChild);
+}
+while(flopTurnRiver.firstChild) {
+    flopTurnRiver.removeChild(flopTurnRiver.firstChild);
+}
+}
+
+//SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+function showComCards() {
+while (myDiv.firstChild) {
+    myDiv.removeChild(myDiv.firstChild);
+}
+var card = create(comPuterOne);
+var e = create(comPuterTwo);
+myDiv.appendChild(card);
+myDiv.appendChild(e);
+}
+
+
+
+
+var b = 0;
+var yourAmount = 5000;
+var comAmount = 5000;
+var yourBet = 0;
+var comBet = 0;
+
+
+function addToPot() {
+ if(document.getElementById("check").checked) {
+yourBet = 0;
+}else if (document.getElementById("fold").checked) {
+yourBet = 0;
+}else if (document.getElementById("raise").checked) {
+var e = document.getElementById("raiseAmount");
+var strUser = e.options[e.selectedIndex].value;
+b = parseInt(strUser);
+yourBet = b;
+}
+pot = pot + yourBet;
+var out=document.getElementById("thePot");
+out.innerHTML=pot;
+}
+
+
+var message = "";
+function comDecision() {
+var d = Math.floor((Math.random()*4)+1);
+if (message === "Computer raises.Check to call" && document.getElementById("check").checked){
+yourBet = 100;
+pot = pot + 100;
+message="";
+comBet = 0;
+}
+else if (message === "Computer raises.Check to call") {
+yourBet = 0;
+comBet = 0;
+document.getElementById("fold").checked = true;
+message="";
+} else if (document.getElementById("raise").checked) {
+if (d<4) {
+message = "Computer calls";
+comBet = b;
+}else{
+message = "Computer folds";
+comBet = 0;
+}
+}else if(document.getElementById("check").checked){
+if (d<3) {
+message = "Computer checks";
+comBet = 0;
+} else {
+comBet = 100;
+message = "Computer raises.Check to call";
+disableRaise();
+enableSubmit();
+disableNext();
+} 
+}
+pot = pot + comBet;
+var out=document.getElementById("thePot");
+out.innerHTML=pot;
+var talk=document.getElementById("computerDecision");
+talk.innerHTML = message;
+
+}
+
+function yourWinnings() {
+yourAmount = yourAmount - yourBet;
+if (yourAmount < 0) {
+alert("You ran out of money");
+disableDeal();
+disableNext();
+disableSubmit();
+disableClear();
+}else {
+var out=document.getElementById("yourAmount");
+out.innerHTML=yourAmount;
+}
+}
+function comWinnings() {
+comAmount = comAmount - comBet;
+if (comAmount < 0) {
+alert("Computer ran out of money");
+disableDeal();
+disableNext();
+disableSubmit();
+disableClear();
+}else{
+var out=document.getElementById("computerAmount");
+out.innerHTML=comAmount;
+}
+}
+
+var counterB = 0;
+function addCounter() {
+counterB = counterB + 1;
+
+}
+function resetCounter() {
+counterB = 0;
+}
+
+//NOT FOR CODE
+/*var myFirstSuit 
+var mySecondSuit 
+var myFirstNumber 
+var mySecondNumber
+var comFirstNum 
+var comSecondNum
+var comFirstSuit 
+var comSecondSuit 
+var flopOneSuit 
+var flopOneNumber 
+var flopTwoSuit 
+var flopTwoNumber 
+var flopThreeSuit
+var flopThreeNumber 
+var turnSuit 
+var turnNumber 
+var riverNumber 
+var riverSuit 
+var myHeartCounter 
+var mySpadeCounter
+var myDiamondCounter 
+var myClubCounter 
+var comHeartCounter 
+var comSpadeCounter 
+var comDiamondCounter 
+var comClubCounter 
+*/
+
+function whoWins() {
+if (message === "Computer folds") {
+yourAmount = yourAmount + pot;
+enableClear();
+disableNext();
+clearPot();
+message = "Computer folds.You win";
+} else if (document.getElementById("fold").checked) {
+comAmount = comAmount + pot;
+message = "You lose";
+clearPot();
+enableClear();
+disableNext();
+} else if (counter === 3){
+showComCards();
+
+var myHand = 0;
+var comHand = 0;
+var myHigh = 0;
+var comHigh = 0;
+//flush,3 of a kind,poket pair
+if (myHeartCounter >= 5 || myDiamondCounter >= 5 || myClubCounter >= 5 || mySpadeCounter >= 5) {
+myHand = myHand + 100000;
+}else if(myFirstNumber == mySecondNumber && myFirstNumber == flopOneNumber|| myFirstNumber == mySecondNumber && myFirstNumber ==flopTwoNumber|| myFirstNumber == mySecondNumber && myFirstNumber ==flopThreeNumber ||myFirstNumber == mySecondNumber && myFirstNumber ==turnNumber||myFirstNumber == mySecondNumber && myFirstNumber ==riverNumber) {
+myHand = myHand + 5000 * myFirstNumber;
+} else if (myFirstNumber == mySecondNumber || myFirstNumber == flopOneNumber || myFirstNumber == flopTwoNumber || myFirstNumber == flopThreeNumber||myFirstNumber == turnNumber ||myFirstNumber ==riverNumber) {
+myHand = myHand + 100 * myFirstNumber;
+} else if ( mySecondNumber == flopOneNumber || mySecondNumber == flopTwoNumber || mySecondNumber == flopThreeNumber||mySecondNumber == turnNumber ||mySecondNumber ==riverNumber) {
+myHand = myHand + 100 * mySecondNumber;
+} 
+
+if (comHeartCounter >= 5 || comDiamondCounter >= 5 || comClubCounter >= 5 || comSpadeCounter >= 5) {
+comHand = comHand + 100000;
+}else if(comFirstNum == comSecondNum && comFirstNum == flopOneNumber|| comFirstNum == comSecondNum && comFirstNum ==flopTwoNumber|| comFirstNum == comSecondNum && comFirstNum ==flopThreeNumber ||comFirstNum == comSecondNum && comFirstNum ==turnNumber||comFirstNum == comSecondNum && comFirstNum ==riverNumber) {
+comHand = comHand + 5000 * comFirstNum;
+}else if (comFirstNum  == comSecondNum || comFirstNum  == flopOneNumber || comFirstNum  == flopTwoNumber || comFirstNum  == flopThreeNumber||comFirstNum  == turnNumber ||comFirstNum  ==riverNumber) {
+comHand = comHand + 100 *comFirstNum ;
+} else if ( comSecondNum  == flopOneNumber || comSecondNum  == flopTwoNumber || comSecondNum  == flopThreeNumber||comSecondNum  == turnNumber ||comSecondNum  ==riverNumber) {
+comHand = comHand + 100 * comSecondNum ;
+} 
+
+//add high card at end
+myHigh = Math.max(myFirstNumber,mySecondNumber);
+comHigh = Math.max(comFirstNum ,comSecondNum );
+comHand = comHand + comHigh;
+myHand = myHand +myHigh;
+
+//compare hands
+if (myHand>comHand) {
+yourAmount = yourAmount + pot;
+enableClear();
+disableNext();
+clearPot();
+message = "You win";
+} else if (myHand<comHand) {
+comAmount = comAmount + pot;
+message = "You lose";
+clearPot();
+enableClear();
+disableNext();
+} else {
+pot = pot / 2;
+comAmount = comAmount + pot;
+yourAmount = yourAmount + pot;
+message = "You tied.";
+clearPot();
+enableClear();
+disableNext();
+}
+clearMySuitCounter();
+clearComSuitCounter();
+}
+var div = document.getElementById("computerDecision");
+div.innerHTML=message;
+var out=document.getElementById("yourAmount");
+out.innerHTML=yourAmount;
+var d = document.getElementById("computerAmount");
+d.innerHTML=comAmount;
+}
+
+
+function enableDeal() {
+ document.getElementById("deal").disabled = false;
+}
+
+function disableDeal() {
+ document.getElementById("deal").disabled = true;
+} 
+
+function enableNext() {
+ document.getElementById("next").disabled = false;
+} 
+
+
+function disableNext() {
+ document.getElementById("next").disabled = true;
+} 
+
+function enableSubmit() {
+ document.getElementById("submit").disabled = false;
+}
+
+function disableSubmit() {
+ document.getElementById("submit").disabled =true;
+}
+
+function disableClear() {
+ document.getElementById("clear").disabled =true;
+}
+
+function enableClear() {
+ document.getElementById("clear").disabled =false;
+}
+
+function disableStart() {
+ document.getElementById("start").disabled = true;
+}
+function disableRaise() {
+document.getElementById("raise").disabled = true;
+
+}
+function enableRaise() {
+document.getElementById("raise").disabled = false;
+}
+
+</script>
+
+<style type="text/css">
+
+
+
+</style>
+
+
+</head>
+
+<body  style = "position:relative;height:700px;width:1500px;background:red;">
+
+<div id = "buttonDiv" style = "position:absolute;top:80%;left:80%;">
+<form> 
+<input type="button" id = "start" value="Start" onclick = "enableDeal();disableStart(); ">
+<input type="button" id = "deal" value="Deal"  disabled onclick = "disableDeal();returnFirst();returnSecond();ComPuterOne();ComPuterTwo();potCalc();enableSubmit();" > 
+
+
+<input type="button" id = "next" value="Next" disabled onclick = "whichNext(); addCounter() ;disableNext();enableSubmit();enableRaise(); " > 
+
+<input type="button" id = "clear" value="Clear" disabled onclick = "Clear();resetCounter();enableDeal();disableClear(); ">
+</form>
+</div>
+<div id = "radioDiv" style = "position:absolute;top:85%;left:80%;width:100px;">
+<form >
+        
+               OPTIONS <br/> 
+                     	<input type="radio" id = "check" name="option" /> Check <br />
+                        <input type="radio" id = "fold" name="option"  />Fold <br />
+			<input type="radio" id = "raise" name="option" />Raise <br />
+		
+		
+		<select id="raiseAmount">               
+			<option name="option" value = "100">100</option>
+        		<option name="option" value = "200">200</option>
+        		<option name="option" value = "300">300</option>
+        		<option name="option" value = "400">400</option>
+		</select>
+		<input type="button" id = "submit" value="Submit" disabled onclick = "disableSubmit();enableNext();addToPot(); comDecision();yourWinnings();comWinnings();whoWins(); " >
+                        
+        
+</form>
+</div>
+
+<div id = "potLabel" style = "position:absolute;top:22%;left:30%;height:50px;width:100px;">
+Pot
+</div>
+
+<div Pot id="thePot" name="Pot" style = "position:absolute;top:25%;left:30%;height:50px;width:100px;" >
+</div>
+
+<div id = "comAmountLabel" style = "position:absolute;top:30%;left:30%;height:50px;width:100px;">
+Computer Amount
+</div>
+
+<div id="computerAmount" style = "position:absolute;top:35%;left:30%;height:50px;width:100px;" >
+</div>
+
+<div id = "yourAmountLabel" style = "position:absolute;top:42%;left:30%;height:50px;width:100px;">
+Your Amount
+</div> 
+
+<div id="yourAmount"  style = "position:absolute;top:45%;left:30%;height:50px;width:150px;"  >
+</div>
+
+<div  id = "computerDecision"  style = "position:absolute;top:15%;left:45%;height:50px;width:100px;background:green;  " >
+</div>
+
+<div id="flopTurnRiver" name="flopTurnRiver" style = "position:absolute;top:50%;left:40%;height:100px;width:500px; background:yellow;  " >
+</div>
+
+<div id="myDiv" name="myDiv" style = "position:absolute;top:30%;left:45%;height:100px;width:200px;background:yellow; ">
+</div>
+
+<div id="myCards" name="myCards" style = "position:absolute;top:70%;left:45%; height:100px;width:200px;background:yellow; " >
+</div>
+
+
+
+</body>
+</html>
